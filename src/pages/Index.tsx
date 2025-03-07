@@ -8,6 +8,7 @@ import FAQ from '@/components/FAQ';
 import Disclaimer from '@/components/Disclaimer';
 import Footer from '@/components/Footer';
 import FloatingElements from '@/components/FloatingElements';
+import FeaturedImage from '@/components/FeaturedImage';
 
 const Index = () => {
   useEffect(() => {
@@ -41,9 +42,6 @@ const Index = () => {
       {/* Background animation elements */}
       <FloatingElements />
       
-      {/* Header */}
-      <Header />
-      
       {/* Main Content */}
       <main className="relative z-10">
         <Hero />
@@ -51,7 +49,11 @@ const Index = () => {
         <Testimonials />
         <FAQ />
         <Disclaimer />
+        <FeaturedImage />
       </main>
+      
+      {/* Header */}
+      <Header />
       
       {/* Footer */}
       <Footer />
