@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import Button from './Button';
 import { Menu, X } from 'lucide-react';
@@ -7,6 +7,8 @@ import { Menu, X } from 'lucide-react';
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
   
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +18,45 @@ const Header: React.FC = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    // Handle click outside to close the mobile menu
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        isMobileMenuOpen && 
+        mobileMenuRef.current && 
+        !mobileMenuRef.current.contains(event.target as Node) &&
+        menuButtonRef.current && 
+        !menuButtonRef.current.contains(event.target as Node)
+      ) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    // Handle escape key to close the mobile menu
+    const handleEscKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape' && isMobileMenuOpen) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    // Add event listeners
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleEscKey);
+    
+    // Lock body scroll when mobile menu is open
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEscKey);
+      document.body.style.overflow = '';
+    };
+  }, [isMobileMenuOpen]);
 
   const scrollToSection = (id: string) => {
     setIsMobileMenuOpen(false);
@@ -77,25 +118,41 @@ const Header: React.FC = () => {
         
         {/* Mobile Menu Button */}
         <button 
+          ref={menuButtonRef}
           className="md:hidden text-white hover:text-cyber-neon-blue"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMobileMenuOpen}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
       
       {/* Mobile Menu */}
-      <div className={cn(
-        "md:hidden fixed inset-0 z-40 bg-cyber-dark/95 backdrop-blur-lg transition-transform duration-300 transform",
-        isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
-      )}>
+      <div 
+        ref={mobileMenuRef}
+        className={cn(
+          "md:hidden fixed inset-0 z-40 bg-cyber-dark/95 backdrop-blur-lg transition-transform duration-300 transform",
+          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        )}
+      >
         <div className="container px-4 mx-auto py-16 flex flex-col items-center space-y-6">
+          {/* Close button at the top of the mobile menu */}
+          <button 
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="absolute top-4 right-4 text-white hover:text-cyber-neon-blue p-2 rounded-full bg-cyber-dark/50"
+            aria-label="Close menu"
+          >
+            <X size={24} />
+          </button>
+          
           <Button 
             href="https://chatgpt.com/g/g-yfs0iWcFN-roleplay-companion" 
             target="_blank"
             variant="primary"
             size="lg"
             className="w-full justify-center font-cyber-alt"
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             USE ROLEPLAY GPT NOW
           </Button>
@@ -120,6 +177,7 @@ const Header: React.FC = () => {
             variant="outline"
             size="lg"
             className="w-full justify-center"
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             More AI Tools
           </Button>
