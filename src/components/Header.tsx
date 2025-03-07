@@ -36,9 +36,8 @@ const Header: React.FC = () => {
         {/* Logo */}
         <div className="flex items-center">
           <div className="text-2xl font-cyber-alt font-bold">
-            <span className="text-cyber-neon-blue">R</span>
-            <span className="text-cyber-neon-purple">C</span>
-            <span className="text-cyber-neon-pink">GPT</span>
+            <span className="text-cyber-neon-blue">Roleplay</span>
+            <span className="text-cyber-neon-purple"> GPT</span>
           </div>
         </div>
         

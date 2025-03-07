@@ -61,8 +61,7 @@ const Logo3D: React.FC = () => {
         <div className="flex flex-col items-center">
           <div className="text-3xl md:text-4xl font-cyber-alt font-bold">
             <span className="text-cyber-neon-blue">Roleplay</span>
-            <span className="text-cyber-neon-purple"> Companion</span>
-            <span className="text-cyber-neon-pink"> GPT</span>
+            <span className="text-cyber-neon-purple"> GPT</span>
           </div>
           <div className="text-xs mt-1 text-gray-400">
             Presented by <a href="https://www.aiwebtools.ai" className="hover:text-cyber-neon-blue transition-colors">AiWebTools.Ai</a>

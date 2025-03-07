@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { cn } from '@/lib/utils';
 
@@ -6,10 +7,11 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size?: 'sm' | 'md' | 'lg';
   href?: string;
   className?: string;
+  target?: string;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ children, className, variant = 'primary', size = 'md', href, ...props }, ref) => {
+  ({ children, className, variant = 'primary', size = 'md', href, target, ...props }, ref) => {
     const baseStyles = "cyber-button inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none disabled:opacity-50";
     
     const variants = {
@@ -38,7 +40,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         <a 
           href={href}
           className={buttonClasses}
-          {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
+          target={target}
+          rel={target === "_blank" ? "noopener noreferrer" : undefined}
         >
           {children}
         </a>

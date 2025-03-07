@@ -12,8 +12,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center md:items-start">
             <div className="text-2xl font-cyber-alt font-bold mb-4">
               <span className="text-cyber-neon-blue">Roleplay</span>
-              <span className="text-cyber-neon-purple"> Companion</span>
-              <span className="text-cyber-neon-pink"> GPT</span>
+              <span className="text-cyber-neon-purple"> GPT</span>
             </div>
             
             <p className="text-gray-400 text-sm mb-6 text-center md:text-left">
