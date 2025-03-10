@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -132,7 +131,7 @@ export default {
 				'glow': 'glow 3s ease-in-out infinite',
 				'slide-in-left': 'slide-in-left 0.5s forwards',
 				'slide-in-right': 'slide-in-right 0.5s forwards',
-				'fade-in': 'fade-in 0.8s ease-out'
+				'fade-in': 'fade-in 0.5s ease-out'
 			},
 			boxShadow: {
 				'neon-blue': '0 0 5px rgba(0, 246, 255, 0.3), 0 0 10px rgba(0, 246, 255, 0.2), 0 0 15px rgba(0, 246, 255, 0.1)',
@@ -147,6 +146,13 @@ export default {
 			fontFamily: {
 				'cyber': ['Rajdhani', 'sans-serif'],
 				'cyber-alt': ['Orbitron', 'sans-serif'],
+			},
+			backgroundSize: {
+				'size-200': '200% 200%',
+			},
+			backgroundPosition: {
+				'pos-0': '0% 0%',
+				'pos-100': '100% 100%',
 			},
 		}
 	},
