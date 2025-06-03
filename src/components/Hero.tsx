@@ -51,22 +51,23 @@ const Hero: React.FC = () => {
           {/* 3D Logo */}
           <Logo3D />
           
-          {/* Tagline */}
+          {/* SEO-optimized tagline */}
           <p className="text-lg md:text-xl text-gray-300 mt-6 max-w-2xl mx-auto italic">
-            "There are no limits to what you can accomplish, except the limits you place on your own thinking."
+            "Free AI Tools by AIWebTools.ai - There are no limits to what you can accomplish, except the limits you place on your own thinking."
             <span className="block text-gray-400 mt-1 text-sm">– Brian Tracy</span>
           </p>
           
-          {/* Main headline */}
+          {/* SEO-optimized main headline */}
           <h1 className="mt-8 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-            <span className="block text-white">Unleash the Ultimate</span>
-            <span className="block mt-2 neon-text animate-pulse-neon">Roleplay Experience</span>
+            <span className="block text-white">Free AI Tools: Unleash the Ultimate</span>
+            <span className="block mt-2 neon-text animate-pulse-neon">AI Character Roleplay Experience</span>
           </h1>
           
-          {/* Description */}
+          {/* SEO-enhanced description */}
           <p className="mt-6 text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Meet your unrestricted AI companion for entertainment and roleplaying. Immerse yourself in boundless creativity, 
-            vivid storytelling, and limitless scenarios — bringing your imagination to life with unprecedented realism.
+            Discover the best free AI tools for character roleplaying and entertainment. Our advanced AI companion by AIWebTools.ai 
+            offers unlimited creativity, vivid storytelling, and boundless scenarios — bringing your imagination to life with 
+            unprecedented realism. Join thousands using our free AI tools for immersive roleplay experiences.
           </p>
           
           {/* CTA Buttons */}
@@ -78,7 +79,7 @@ const Hero: React.FC = () => {
               size="lg"
               className="min-w-[220px] font-cyber-alt"
             >
-              START ROLEPLAYING NOW
+              START ROLEPLAYING NOW - FREE
             </Button>
             
             <Button 
@@ -86,25 +87,25 @@ const Hero: React.FC = () => {
               variant="outline"
               size="lg"
             >
-              HOW IT WORKS
+              HOW OUR FREE AI TOOLS WORK
             </Button>
           </div>
           
-          {/* Floating badges */}
+          {/* SEO-enhanced floating badges */}
           <div className="mt-12 flex flex-wrap justify-center gap-6">
             <div className="cyber-panel px-4 py-2 flex items-center">
               <div className="w-3 h-3 rounded-full bg-cyber-neon-blue mr-2 animate-pulse"></div>
-              <span className="text-sm">Unlimited Characters</span>
+              <span className="text-sm">100% Free AI Tools</span>
             </div>
             
             <div className="cyber-panel px-4 py-2 flex items-center">
               <div className="w-3 h-3 rounded-full bg-cyber-neon-purple mr-2 animate-pulse"></div>
-              <span className="text-sm">Never Breaks Character</span>
+              <span className="text-sm">Unlimited Characters</span>
             </div>
             
             <div className="cyber-panel px-4 py-2 flex items-center">
               <div className="w-3 h-3 rounded-full bg-cyber-neon-pink mr-2 animate-pulse"></div>
-              <span className="text-sm">Adult Content Ready</span>
+              <span className="text-sm">By AIWebTools.ai</span>
             </div>
           </div>
         </div>

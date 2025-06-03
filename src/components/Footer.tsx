@@ -15,7 +15,11 @@ const Footer: React.FC = () => {
               <span className="text-cyber-neon-purple"> GPT</span>
             </div>
             
-            <p className="text-gray-400 text-sm mb-6 text-center md:text-left">
+            <p className="text-gray-400 text-sm mb-4 text-center md:text-left">
+              Free AI Tools by AIWebTools.ai for unlimited character roleplaying and entertainment.
+            </p>
+            
+            <p className="text-gray-400 text-xs mb-6 text-center md:text-left">
               "There are no limits to what you can accomplish, except the limits you place on your own thinking."
               <span className="block mt-1">– Brian Tracy</span>
             </p>
@@ -27,20 +31,20 @@ const Footer: React.FC = () => {
               size="sm"
               className="mb-4"
             >
-              USE ROLEPLAY GPT NOW
+              USE FREE AI TOOLS NOW
             </Button>
           </div>
           
           {/* Column 2: Quick links */}
           <div>
-            <h3 className="text-white font-bold mb-4 text-center md:text-left">Quick Links</h3>
+            <h3 className="text-white font-bold mb-4 text-center md:text-left">Free AI Tools</h3>
             <ul className="space-y-2 flex flex-col items-center md:items-start">
               <li>
                 <button 
                   onClick={() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-gray-400 hover:text-cyber-neon-blue transition-colors"
                 >
-                  FAQ
+                  AI Tools FAQ
                 </button>
               </li>
               <li>
@@ -48,7 +52,7 @@ const Footer: React.FC = () => {
                   onClick={() => document.getElementById('disclaimer')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-gray-400 hover:text-cyber-neon-blue transition-colors"
                 >
-                  Disclaimer
+                  AI Tools Disclaimer
                 </button>
               </li>
               <li>
@@ -76,7 +80,7 @@ const Footer: React.FC = () => {
           
           {/* Column 3: Contact info */}
           <div>
-            <h3 className="text-white font-bold mb-4 text-center md:text-left">Contact Us</h3>
+            <h3 className="text-white font-bold mb-4 text-center md:text-left">Contact AIWebTools.ai</h3>
             <ul className="space-y-4 flex flex-col items-center md:items-start">
               <li>
                 <a 
@@ -107,7 +111,7 @@ const Footer: React.FC = () => {
                            transform hover:-translate-y-1 transition-transform duration-300
                            shadow-neon-blue hover:shadow-neon-purple"
               >
-                More AI Tools
+                More Free AI Tools
               </a>
             </div>
           </div>
@@ -123,7 +127,7 @@ const Footer: React.FC = () => {
           >
             <img 
               src="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/a-cinematic-medium-shot-of-two-robots-standing.png/:/cr=t:3.48%25,l:0%25,w:100%25,h:93.05%25/rs=w:1200,h:600,cg:true"
-              alt="Cinematic shot of two robots"
+              alt="Free AI Tools for Character Roleplaying - AIWebTools.ai"
               className="w-full h-auto rounded"
               loading="lazy"
             />
@@ -136,7 +140,7 @@ const Footer: React.FC = () => {
               rel="noopener noreferrer"
               className="hover:text-cyber-neon-blue transition-colors"
             >
-              © 2025 AI WEB TOOLS LLC
+              © 2025 AI WEB TOOLS LLC - Free AI Tools Provider
             </a>{" "}
             All rights reserved.
           </p>

@@ -90,14 +90,14 @@ const Header: React.FC = () => {
             variant="primary"
             className="font-cyber-alt"
           >
-            USE ROLEPLAY GPT NOW
+            USE FREE AI TOOLS NOW
           </Button>
           
           <button 
             onClick={() => scrollToSection('faq')}
             className="text-white hover:text-cyber-neon-blue transition-colors"
           >
-            FAQ
+            AI Tools FAQ
           </button>
           
           <button 
@@ -112,7 +112,7 @@ const Header: React.FC = () => {
             target="_blank"
             variant="outline"
           >
-            More AI Tools
+            More Free AI Tools
           </Button>
         </nav>
         
@@ -154,14 +154,14 @@ const Header: React.FC = () => {
             className="w-full justify-center font-cyber-alt"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            USE ROLEPLAY GPT NOW
+            USE FREE AI TOOLS NOW
           </Button>
           
           <button 
             onClick={() => scrollToSection('faq')}
             className="w-full text-xl text-white hover:text-cyber-neon-blue transition-colors py-4 border-b border-white/10"
           >
-            FAQ
+            AI Tools FAQ
           </button>
           
           <button 
@@ -179,7 +179,7 @@ const Header: React.FC = () => {
             className="w-full justify-center"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            More AI Tools
+            More Free AI Tools
           </Button>
         </div>
       </div>
