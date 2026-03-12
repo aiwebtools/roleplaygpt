@@ -172,7 +172,7 @@ const Header: React.FC = () => {
           </button>
           
           <Button 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank"
             variant="outline"
             size="lg"
