@@ -49,7 +49,7 @@ const Disclaimer: React.FC = () => {
             </p>
             
             <p>
-              <strong className="text-white">Terms of Service:</strong> Use of Roleplay Companion GPT is subject to the <a href="https://aiwebtools.ai/terms-of-services" target="_blank" rel="noopener noreferrer" className="text-cyber-neon-blue hover:underline">Terms of Service</a>.
+              <strong className="text-white">Terms of Service:</strong> Use of Roleplay Companion GPT is subject to the <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-cyber-neon-blue hover:underline">Terms of Service</a>.
             </p>
             
             <p>

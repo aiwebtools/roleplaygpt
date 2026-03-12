@@ -64,7 +64,7 @@ const Logo3D: React.FC = () => {
             <span className="text-cyber-neon-purple"> GPT</span>
           </div>
           <div className="text-xs mt-1 text-gray-400">
-            Presented by <a href="https://www.aiwebtools.ai" className="hover:text-cyber-neon-blue transition-colors">AiWebTools.Ai</a>
+            Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="hover:text-cyber-neon-blue transition-colors">AiWebTools.Ai</a>
           </div>
           
           {/* Decorative elements */}
