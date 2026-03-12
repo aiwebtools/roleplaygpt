@@ -108,7 +108,7 @@ const Header: React.FC = () => {
           </button>
           
           <Button 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank"
             variant="outline"
           >
@@ -132,11 +132,12 @@ const Header: React.FC = () => {
       <div 
         ref={mobileMenuRef}
         className={cn(
-          "md:hidden fixed inset-0 z-40 bg-cyber-dark/95 backdrop-blur-lg transition-transform duration-300 transform",
-          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          "md:hidden fixed inset-0 z-40 bg-cyber-dark/95 backdrop-blur-lg transition-all duration-200 ease-out",
+          isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
         )}
+        style={{ top: 0 }}
       >
-        <div className="container px-4 mx-auto py-16 flex flex-col items-center space-y-6">
+        <div className="container px-4 mx-auto pt-20 pb-8 flex flex-col items-center space-y-4 h-full overflow-y-auto">
           {/* Close button at the top of the mobile menu */}
           <button 
             onClick={() => setIsMobileMenuOpen(false)}
@@ -172,7 +173,7 @@ const Header: React.FC = () => {
           </button>
           
           <Button 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank"
             variant="outline"
             size="lg"

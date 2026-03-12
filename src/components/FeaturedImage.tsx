@@ -7,7 +7,7 @@ const FeaturedImage: React.FC = () => {
       <div className="container px-4 mx-auto">
         <div className="flex justify-center">
           <a 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank" 
             rel="noopener noreferrer"
             className="block w-full max-w-4xl hover:opacity-90 transition-opacity"
