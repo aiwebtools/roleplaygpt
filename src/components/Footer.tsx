@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
             {/* More AI Tools button */}
             <div className="mt-6 flex justify-center md:justify-start">
               <a 
-                href="https://www.aiwebtools.ai" 
+                href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-cyber-neon-blue to-cyber-neon-purple 
